@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Software projects by Immanuel Gondwe: a Web scrapping system, a library management system and a personal finance tracker, with links to GitHub repositories.">
+  <meta name="author" content="Immanuel Gondwe">
+  <meta name="theme-color" content="#fffdf7">
+  <title>Projects | Immanuel Gondwe</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230c1f3a'/%3E%3Ctext x='32' y='44' font-family='Arial,Helvetica,sans-serif' font-size='28' font-weight='bold' text-anchor='middle' fill='%23e9a825'%3EIG%3C/text%3E%3C/svg%3E">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Immanuel Gondwe, home">
+        <span class="brand-mark" aria-hidden="true">IG</span>
+        <span class="brand-text">Immanuel Gondwe<em>Student</em></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-controls="site-nav" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" class="active" aria-current="page">Projects</a></li>
+          <li><a href="animations.html">Animated Concepts</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ================= PROJECT CARDS ================= -->
+    <section class="section section-light">
+      <div class="container">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true">/</span>
+          <span>Projects</span>
+        </nav>
+        <div class="section-head reveal">
+          <p class="eyebrow on-light">My projects</p>
+          <h1>Three systems, showcasing my work</h1>
+          <p>
+            Each project begins with a title, description, problem statement, technologies used
+            and a link to the GitHub repository.
+          </p>
+        </div>
+
+        <div class="project-list">
+          <!-- ---------- Project 1 ---------- -->
+          <article class="project-card reveal" id="project-one">
+            <a class="project-media" href="https://github.com/ImmanuelPeter/Web-Scraper.git" target="_blank" rel="noopener noreferrer" aria-label="Open the web scraper repository on GitHub">
+              <img src="images/project1.jpg" alt="Web scraper interface showing collected data" width="1500" height="1000" loading="lazy">
+            </a>
+
+            <div class="project-body">
+              <p class="project-kicker">01 &middot; Web Application <span class="project-year">2025</span></p>
+              <h2>Web scrapping</h2>
+              <p>
+                A web scraper is a software program that automatically collects information
+                from websites and organizes it for storage or analysis. It works by visiting websites, 
+                reading their HTML content, extracting useful information such as names, prices, images, 
+                and descriptions, and saving the data in formats like Excel, CSV, or databases.
+              </p>
+
+              <div class="problem-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5"/><path d="M12 16.5v.01"/></svg>
+                <div>
+                  <h3>The problem</h3>
+                  <p>
+                    A web scraper solves the problem of manually collecting information 
+                    from websites, saving time and effort by gathering data automatically
+                  </p>
+                </div>
+              </div>
+
+              <h4>Technologies used</h4>
+              <ul class="tech-list">
+                <li>Python Programming Language</li>
+                <li>Beautiful Soup</li>
+                <li>Scrapy</li>
+                <li>Selenium</li>
+              </ul>
+
+              <div class="project-links">
+                <a class="btn btn-solid btn-sm" href="https://github.com/ImmanuelPeter/Web-Scraper.git" target="_blank" rel="noopener noreferrer">
+                  GitHub repository
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ---------- Project 2 ---------- -->
+          <article class="project-card reveal" id="project-two">
+            <a class="project-media" href="https://github.com/ImmanuelPeter/Library-Management-System.git" target="_blank" rel="noopener noreferrer" aria-label="Open the Library Management System repository on GitHub">
+              <img src="images/project2.jpg" alt="Library Management System catalogue page with book cards, availability labels and search filters" width="1500" height="1000" loading="lazy">
+            </a>
+
+            <div class="project-body">
+              <p class="project-kicker">02 &middot; A command prompt[CMD] <span class="project-year">2024</span></p>
+              <h2>Library Management System</h2>
+              <p>
+                A command prompt application for a school library. Librarians can search the Member,
+                register members, issue and return books, and see which loans are overdue.
+                Students can be viewed in the system.
+              </p>
+
+              <div class="problem-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5"/><path d="M12 16.5v.01"/></svg>
+                <div>
+                  <h3>The problem</h3>
+                  <p>
+                    A card-based catalogue makes it hard to know what is on the shelf. Books
+                    go missing, overdue loans are discovered weeks late, and every search
+                    means walking to the cabinet.
+                  </p>
+                </div>
+              </div>
+
+              <h4>Technologies used</h4>
+              <ul class="tech-list">
+                <li>C++ Programming Language</li>
+              </ul>
+
+              <div class="project-links">
+                <a class="btn btn-solid btn-sm" href="https://github.com/ImmanuelPeter/Library-Management-System.git" target="_blank" rel="noopener noreferrer">
+                  GitHub repository
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ---------- Project 3 ---------- -->
+          <article class="project-card reveal" id="project-three">
+            <a class="project-media" href="https://github.com/ImmanuelPeter/Personal-Finance-Tracker.git" target="_blank" rel="noopener noreferrer" aria-label="Open the Personal Finance Tracker repository on GitHub">
+              <img src="images/project3.jpg" alt="Personal Finance Tracker dashboard with a spending donut chart, savings goals and recent transactions" width="1500" height="1000" loading="lazy">
+            </a>
+
+            <div class="project-body">
+              <p class="project-kicker">03 &middot; Desktop app &amp; data visualisation <span class="project-year">2026</span></p>
+              <h2>Personal Finance Tracker</h2>
+              <p>
+                A budgeting tool designed for students. It records income and expenses,
+                groups spending by category and turns the numbers into a monthly visual
+                summary, with savings goals to work towards.
+              </p>
+
+              <div class="problem-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5"/><path d="M12 16.5v.01"/></svg>
+                <div>
+                  <h3>The problem</h3>
+                  <p>
+                    Students receive stipends or part-time income but rarely see where it
+                    goes. Without a lightweight tracker, small daily expenses quietly add up
+                    and savings disappear before the end of the month.
+                  </p>
+                </div>
+              </div>
+
+              <h4>Technologies used</h4>
+              <ul class="tech-list">
+                <li>Python Programming Language</li>
+                <li>Database</li>
+              </ul>
+
+              <div class="project-links">
+                <a class="btn btn-solid btn-sm" href="https://github.com/ImmanuelPeter/Personal-Finance-Tracker.git" target="_blank" rel="noopener noreferrer">
+                  GitHub repository
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GITHUB BANNER ================= -->
+    <section class="section section-white" id="github">
+      <div class="container">
+        <div class="github-banner reveal">
+          <div>
+            <h2>More code on GitHub</h2>
+            <p>
+              Browse my repositories, coursework experiments and unfinished ideas &mdash;
+              the source for every project above lives there.
+            </p>
+          </div>
+          <a class="btn btn-primary" href="https://github.com/ImmanuelPeter" target="_blank" rel="noopener noreferrer">
+            Visit my GitHub profile
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1。2a1１ １１ ０ ０ １ ５．８ ０C１７．２ ４．７ １８．２ ５ １８．２ ５c．６ １．６．２ ２．８．１ ３．１．８．８ １．２ １．８ １．２ ３．１ ０ ４．５－２．７ ５．５－５．３ ５．８．４．４．８ １．１．８ ２．２v３．３c０ ，３，２，７，８，６ ，４，６－１，５ ，７，９－１０，９C２３，５ ，１８，３ ，１２ ，０、z"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Immanuel Gondwe, home">
+            <span class="brand-mark" aria-hidden="true">IG</span>
+            <span class="brand-text">Immanuel Gondwe<em>Student</em></span>
+          </a>
+          <p>
+            BSc Computer Science student building practical software and exploring
+            Computer Systems, networking and cybersecurity.
+          </p>
+          <div class="footer-social">
+            <a href="https://github.com/ImmanuelPeter" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C17.2 4.7 18.2 5 18.2 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+            </a>
+            <a href="https://wa.me/+265993470125" target="_blank" rel="noopener noreferrer" aria-label="Chat with me on WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.2-2.8c-.2-.4 0-.5.2-.7l.4-.5c.1-.2.1-.3 0-.5-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1 -.7 .3 -.２ .３ -.９ .９ -.９ ２．１ｓ１ ２．５ １．１ ２．７ａ９．１　９．１　０　０　０　３．５　３．１ｃ．５．２．９．４　１．２．５．５．２　１．３　０　０．４　１．４　－１．１　０．２　－０．２　０．２　－０．４　０．１　－０．５　－０．１　－０．２　－０．２　－０．３　－０．５　－０．４z"/></svg>
+            </a>
+            <a href="mailto:immanuelgondwe0@gmail.com" aria-label="Send an email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h6>Explore</h6>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="animations.html">Animated Concepts</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h6>Connect</h6>
+          <ul class="footer-links">
+            <li><a href="mailto:immanuelgondwe0@gmail.com">Email me</a></li>
+            <li><a href="https://github.com/ImmanuelPeter" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://wa.me/+265993470125" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+            <li><a href="projects.html#github">All repositories</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h6>Details</h6>
+          <ul class="footer-links">
+            <li><span>BSc Computer Science</span></li>
+            <li><span>Dmi-st.john the baptist university mangochi campus malawi</span></li>
+            <li><span>Lilongwe, Malawi</span></li>
+            <li><span>Founder and CEO of alloioo &middot; <span data-year>2026</span></span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span data-year>2026</span> Immanuel Gondwe. All rights reserved.</p>
+        <p>Designed and built by Immanuel Gondwe.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
